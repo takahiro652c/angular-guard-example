@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ExampleService } from './example.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular-guard-example';
+  constructor(public exampleService: ExampleService) {}
 }
